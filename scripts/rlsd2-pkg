@@ -1,0 +1,5 @@
+#!/bin/sh
+
+[ -z "${1}" ] && return 0
+
+cd /var/lib/rlsd2/ && make "${1}"
