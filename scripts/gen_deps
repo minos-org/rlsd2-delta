@@ -7,5 +7,5 @@ do
 	. "$i/build"
 	[ "-" = "$PKG_BUILD_DEPS" ] && PKG_BUILD_DEPS="$PKG_DEPS"
 	echo "$(basename "$i"): $PKG_BUILD_DEPS"
-	echo "▷⋅⋅⋅⋅⋅⋅⋅./scripts/build $(basename "$i")"
+	echo "	./scripts/build $(basename "$i")"
 done
