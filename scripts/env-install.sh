@@ -11,4 +11,4 @@
 
 [ -f /bin/env-hooks.sh ] && . /bin/env-hooks.sh
 
-exec /usr/bin/apt-get --no-install-recommends "${@}"
+exec /usr/bin/apt-get install --no-install-recommends "${@}"
