@@ -6,8 +6,8 @@ Changes:
 
 - scripts/
     - env-\*.sh, chroot\*.sh
-        environment scripts for controlling build chroot
+        - environment scripts for controlling build chroot
     - gen-deps
-        per package targets
+        - per package targets
     - other files
-        use tar.gz as the default compress format
+        - use tar.gz as the default compress format
