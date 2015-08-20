@@ -1,0 +1,101 @@
+dropbear failed to build
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_init.c
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_memory.c
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_mult_h.c
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_process.c
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_reset.c
+dropbear-2015.68/libtomcrypt/src/encauth/gcm/gcm_test.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_addheader.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_decrypt.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_decrypt_verify_memory.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_done.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_encrypt.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_encrypt_authenticate_memory.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_init.c
+dropbear-2015.68/libtomcrypt/src/encauth/eax/eax_test.c
+dropbear-2015.68/libtomcrypt/src/encauth/ccm/ccm_memory.c
+dropbear-2015.68/libtomcrypt/src/encauth/ccm/ccm_test.c
+dropbear-2015.68/libtomcrypt/src/ciphers/aes/
+dropbear-2015.68/libtomcrypt/src/ciphers/anubis.c
+dropbear-2015.68/libtomcrypt/src/ciphers/blowfish.c
+dropbear-2015.68/libtomcrypt/src/ciphers/cast5.c
+dropbear-2015.68/libtomcrypt/src/ciphers/des.c
+dropbear-2015.68/libtomcrypt/src/ciphers/kasumi.c
+dropbear-2015.68/libtomcrypt/src/ciphers/khazad.c
+dropbear-2015.68/libtomcrypt/src/ciphers/kseed.c
+dropbear-2015.68/libtomcrypt/src/ciphers/noekeon.c
+dropbear-2015.68/libtomcrypt/src/ciphers/rc2.c
+dropbear-2015.68/libtomcrypt/src/ciphers/rc5.c
+dropbear-2015.68/libtomcrypt/src/ciphers/rc6.c
+dropbear-2015.68/libtomcrypt/src/ciphers/safer/
+dropbear-2015.68/libtomcrypt/src/ciphers/skipjack.c
+dropbear-2015.68/libtomcrypt/src/ciphers/twofish/
+dropbear-2015.68/libtomcrypt/src/ciphers/xtea.c
+dropbear-2015.68/libtomcrypt/src/ciphers/twofish/twofish.c
+dropbear-2015.68/libtomcrypt/src/ciphers/twofish/twofish_tab.c
+dropbear-2015.68/libtomcrypt/src/ciphers/safer/safer.c
+dropbear-2015.68/libtomcrypt/src/ciphers/safer/safer_tab.c
+dropbear-2015.68/libtomcrypt/src/ciphers/safer/saferp.c
+dropbear-2015.68/libtomcrypt/src/ciphers/aes/aes.c
+dropbear-2015.68/libtomcrypt/src/ciphers/aes/aes_tab.c
+dropbear-2015.68/libtomcrypt/notes/base64_tv.txt
+dropbear-2015.68/libtomcrypt/notes/ccm_tv.txt
+dropbear-2015.68/libtomcrypt/notes/cipher_tv.txt
+dropbear-2015.68/libtomcrypt/notes/eax_tv.txt
+dropbear-2015.68/libtomcrypt/notes/ecc_tv.txt
+dropbear-2015.68/libtomcrypt/notes/etc/
+dropbear-2015.68/libtomcrypt/notes/gcm_tv.txt
+dropbear-2015.68/libtomcrypt/notes/hash_tv.txt
+dropbear-2015.68/libtomcrypt/notes/hmac_tv.txt
+dropbear-2015.68/libtomcrypt/notes/lrw_tv.txt
+dropbear-2015.68/libtomcrypt/notes/ocb_tv.txt
+dropbear-2015.68/libtomcrypt/notes/omac_tv.txt
+dropbear-2015.68/libtomcrypt/notes/pmac_tv.txt
+dropbear-2015.68/libtomcrypt/notes/tech0001.txt
+dropbear-2015.68/libtomcrypt/notes/tech0002.txt
+dropbear-2015.68/libtomcrypt/notes/tech0003.txt
+dropbear-2015.68/libtomcrypt/notes/tech0004.txt
+dropbear-2015.68/libtomcrypt/notes/tech0005.txt
+dropbear-2015.68/libtomcrypt/notes/tech0006.txt
+dropbear-2015.68/libtomcrypt/notes/tech0007.txt
+dropbear-2015.68/libtomcrypt/notes/etc/saferp_optimizer.c
+dropbear-2015.68/libtomcrypt/notes/etc/whirlgen.c
+dropbear-2015.68/libtomcrypt/notes/etc/whirltest.c
+dropbear-2015.68/libtomcrypt/doc/footer.html
+dropbear-2015.68/libtomcrypt/doc/header.html
+dropbear-2015.68/libtomcrypt/demos/encrypt.c
+dropbear-2015.68/libtomcrypt/demos/hashsum.c
+dropbear-2015.68/libtomcrypt/demos/multi.c
+dropbear-2015.68/libtomcrypt/demos/small.c
+dropbear-2015.68/libtomcrypt/demos/test.c
+dropbear-2015.68/libtomcrypt/demos/timing.c
+dropbear-2015.68/libtomcrypt/demos/tv_gen.c
+dropbear-2015.68/debian/changelog
+dropbear-2015.68/debian/control
+dropbear-2015.68/debian/copyright.in
+dropbear-2015.68/debian/dropbear.conffiles
+dropbear-2015.68/debian/dropbear.default
+dropbear-2015.68/debian/dropbear.docs
+dropbear-2015.68/debian/dropbear.init
+dropbear-2015.68/debian/dropbear.postinst
+dropbear-2015.68/debian/dropbear.postrm
+dropbear-2015.68/debian/dropbear.prerm
+dropbear-2015.68/debian/dropbear.README.Debian
+dropbear-2015.68/debian/implicit
+dropbear-2015.68/debian/README.Debian
+dropbear-2015.68/debian/README.Debian.diet
+dropbear-2015.68/debian/README.runit
+dropbear-2015.68/debian/rules
+dropbear-2015.68/debian/service/
+dropbear-2015.68/debian/service/log
+dropbear-2015.68/debian/service/run
+> Applying /var/lib/rlsd2/rules/dropbear/options.patch
+patching file dropbear.8
+patching file options.h
+Hunk #1 succeeded at 271 (offset -5 lines).
+Hunk #2 FAILED at 294.
+Hunk #3 succeeded at 331 (offset -5 lines).
+1 out of 3 hunks FAILED -- saving rejects to file options.h.rej
+patching file sysoptions.h
+Hunk #1 succeeded at 7 with fuzz 1.
+> Cleaning up
