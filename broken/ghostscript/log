@@ -1,0 +1,7 @@
++ make -j 4
+base/unixlink.mak:107: warning: overriding commands for target `bin'
+base/unixlink.mak:83: warning: ignoring old commands for target `bin'
+base/unixlink.mak:130: warning: overriding commands for target `bin'
+base/unixlink.mak:107: warning: ignoring old commands for target `bin'
+make: *** No rule to make target `obj/sjbig2_.dev', needed by `obj/sjbig2.dev'.  Stop.
+make: *** Waiting for unfinished jobs....

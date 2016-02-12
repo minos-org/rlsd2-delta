@@ -1,0 +1,20 @@
+depbase=`echo commands_completion.o | sed 's|[^/]*$|.deps/&|;s|\.o$||'`;\
+        /var/lib/rlsd2/sysroot/bin/musl-gcc -DHAVE_CONFIG_H -I. -I..     -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses   -MT commands_completion.o -MD -MP -MF $depba
+se.Tpo -c -o commands_completion.o commands_completion.c &&\
+        mv -f $depbase.Tpo $depbase.Po
+color_scheme.c: In function 'list_color_scheme_files':
+color_scheme.c:456:28: error: 'PACKAGE_SYSCONF_DIR' undeclared (first use in this function)
+color_scheme.c:456:28: note: each undeclared identifier is reported only once for each function it appears in
+color_scheme.c:456:28: error: expected ')' before string constant
+color_scheme.c:456:28: error: too few arguments to function 'list_regular_files'
+utils/fs.h:123:9: note: declared here
+color_scheme.c: In function 'get_cs_path':
+color_scheme.c:808:26: error: 'PACKAGE_SYSCONF_DIR' undeclared (first use in this function)
+color_scheme.c:808:26: error: expected ')' before string constant
+make[3]: *** [color_scheme.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[3]: Leaving directory `/var/lib/rlsd2/tmp.ZmWd1p3Mi2/vifm-0.8/src'
+make[2]: *** [all-recursive] Error 1
+make[2]: Leaving directory `/var/lib/rlsd2/tmp.ZmWd1p3Mi2/vifm-0.8'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.ZmWd1p3Mi2/vifm-0.8'

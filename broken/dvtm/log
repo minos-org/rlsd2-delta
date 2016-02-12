@@ -1,0 +1,26 @@
+dvtm failed to build
+vt.c:1328:3: warning: implicit declaration of function 'kill' [-Wimplicit-function-declaration]
+vt.c:1349:3: warning: implicit declaration of function 'wcwidth' [-Wimplicit-function-declaration]
+dvtm.c: In function 'killclient':
+dvtm.c:1183:2: warning: implicit declaration of function 'kill' [-Wimplicit-function-declaration]
+vt.c: In function 'vt_forkpty':
+vt.c:1588:3: error: unknown type name 'sigset_t'
+vt.c:1589:3: warning: implicit declaration of function 'sigemptyset' [-Wimplicit-function-declaration]
+vt.c:1590:3: warning: implicit declaration of function 'sigprocmask' [-Wimplicit-function-declaration]
+vt.c:1590:15: error: 'SIG_SETMASK' undeclared (first use in this function)
+vt.c:1590:15: note: each undeclared identifier is reported only once for each function it appears in
+vt.c:1610:4: warning: implicit declaration of function 'setenv' [-Wimplicit-function-declaration]
+dvtm.c: In function 'parse_args':
+dvtm.c:1660:17: error: expected ')' before 'VERSION'
+dvtm.c:1694:16: warning: assignment makes pointer from integer without a cast [enabled by default]
+dvtm.c:1696:5: warning: implicit declaration of function 'setenv' [-Wimplicit-function-declaration]
+dvtm.c: In function 'main':
+dvtm.c:1713:17: error: 'VERSION' undeclared (first use in this function)
+dvtm.c:1713:17: note: each undeclared identifier is reported only once for each function it appears in
+dvtm.c:1721:2: warning: implicit declaration of function 'sigaddset' [-Wimplicit-function-declaration]
+dvtm.c:1723:2: warning: implicit declaration of function 'sigprocmask' [-Wimplicit-function-declaration]
+dvtm.c:1723:14: error: 'SIG_BLOCK' undeclared (first use in this function)
+make[1]: *** [vt.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** [dvtm.o] Error 1
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.0bPK2cjgE2/dvtm-0.14'`

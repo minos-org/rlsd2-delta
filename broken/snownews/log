@@ -1,0 +1,24 @@
+> Building
+Configuring for a Linux system... Done
+make[1]: Entering directory `/var/lib/rlsd2/tmp.jNAiJpVaTW/snownews-1.5.12'
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o main.o main.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o netio.o netio.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o interface.o interface.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o xmlparse.o xmlparse.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o updatecheck.o updatecheck.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o conversions.o conversions.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o dialog.o dialog.c
+conversions.c:42:0: warning: "_XOPEN_SOURCE" redefined [enabled by default]
+/var/lib/rlsd2/sysroot/include/features.h:16:0: note: this is the location of the previous definition
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o ui-support.o ui-support.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o categories.o categories.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o about.o about.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o cookies.o cookies.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o setup.o setup.c
+/var/lib/rlsd2/sysroot/bin/musl-gcc -I/var/lib/rlsd2/sysroot/include -I/var/lib/rlsd2/sysroot/include/ncurses -I/var/lib/rlsd2/sysroot/include/libxml2     -c -o net-support.o net-support.c
+setup.c: In function 'SetupUserAgent':
+setup.c:134:81: error: 'OS' undeclared (first use in this function)
+setup.c:134:81: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [setup.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.jNAiJpVaTW/snownews-1.5.12'

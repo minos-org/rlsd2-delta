@@ -1,0 +1,35 @@
+make[1]: Entering directory `/var/lib/rlsd2/tmp.olWiSJoGWQ/packlim-git12022016'
+cd src; make
+make[2]: Entering directory `/var/lib/rlsd2/tmp.olWiSJoGWQ/packlim-git12022016/src'
+/var/lib/rlsd2/sysroot/bin/musl-gcc -c -o jim-curl.o jim-curl.c -march=i486 -mtune=i686 -g         -Os         -fomit-frame-pointer         -ffunction-sections         -fdata-sections
+-fmerge-all-constants         -fstack-protector         --param=ssp-buffer-size=4         -pipe -std=gnu99 -Wall -pedantic -Wno-overlength-strings -DVERSION=\"1.0\" -DCURL_STATICLIB
+-I/var/lib/rlsd2/sysroot/include
+/var/lib/rlsd2/sysroot/bin/musl-gcc -c -o jim-ed25519.o jim-ed25519.c -march=i486 -mtune=i686 -g         -Os         -fomit-frame-pointer         -ffunction-sections         -fdata-sections
+-fmerge-all-constants         -fstack-protector         --param=ssp-buffer-size=4         -pipe -std=gnu99 -Wall -pedantic -Wno-overlength-strings -DVERSION=\"1.0\"
+/var/lib/rlsd2/sysroot/bin/musl-gcc -c -o jim-lockf.o jim-lockf.c -march=i486 -mtune=i686 -g         -Os         -fomit-frame-pointer         -ffunction-sections         -fdata-sections
+-fmerge-all-constants         -fstack-protector         --param=ssp-buffer-size=4         -pipe -std=gnu99 -Wall -pedantic -Wno-overlength-strings -DVERSION=\"1.0\"
+sed -e s~'^     *'~~g \
+            -e s~'\'~'\\'~g \
+            -e s~'"'~'\"'~g \
+            -e s~'^'~'"'~g \
+            -e s~'$'~'\n" \'~g \
+            packlim.tcl | \
+        grep -v \
+             -e ^\"\# \
+             -e '^"\n" \' > packlim.inc; \
+        echo \"\" >> packlim.inc
+/var/lib/rlsd2/sysroot/bin/musl-gcc -c -o jim-sigmask.o jim-sigmask.c -march=i486 -mtune=i686 -g         -Os         -fomit-frame-pointer         -ffunction-sections         -fdata-sections
+-fmerge-all-constants         -fstack-protector         --param=ssp-buffer-size=4         -pipe -std=gnu99 -Wall -pedantic -Wno-overlength-strings -DVERSION=\"1.0\"
+/var/lib/rlsd2/sysroot/bin/musl-gcc -c -o jim-tar.o jim-tar.c -march=i486 -mtune=i686 -g         -Os         -fomit-frame-pointer         -ffunction-sections         -fdata-sections
+-fmerge-all-constants         -fstack-protector         --param=ssp-buffer-size=4         -pipe -std=gnu99 -Wall -pedantic -Wno-overlength-strings -DVERSION=\"1.0\"
+-I/var/lib/rlsd2/sysroot/include
+jim-curl.c:34:24: fatal error: jim-subcmd.h: No such file or directory
+compilation terminated.
+jim-sigmask.c:28:24: fatal error: jim-subcmd.h: No such file or directory
+compilation terminated.
+make[2]: *** [jim-curl.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [jim-sigmask.o] Error 1
+make[2]: Leaving directory `/var/lib/rlsd2/tmp.olWiSJoGWQ/packlim-git12022016/src'
+make[1]: *** [all] Error 2
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.olWiSJoGWQ/packlim-git12022016'

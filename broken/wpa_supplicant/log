@@ -1,0 +1,31 @@
+  CC  ../src/rsn_supp/pmksa_cache.c
+  CC  config_file.c
+  CC  ../src/rsn_supp/preauth.c
+  CC  ../src/rsn_supp/wpa_ie.c
+  CC  ../src/common/wpa_common.c
+  CC  ../src/rsn_supp/peerkey.c
+  CC  ../src/eap_peer/eap_tls.c
+  CC  ../src/eap_common/eap_peap_common.c
+  CC  ../src/eap_peer/eap_md5.c
+  CC  ../src/eap_peer/eap_peap.c
+  CC  ../src/eap_peer/mschapv2.c
+  CC  ../src/eap_peer/eap_gtc.c
+  CC  ../src/eap_peer/eap_otp.c
+  CC  ../src/eap_peer/eap_mschapv2.c
+  CC  ../src/eap_peer/eap_ttls.c
+  CC  ../src/rsn_supp/wpa.c
+  CC  ../src/eap_peer/eap_leap.c
+  CC  ../src/eap_peer/eap_methods.c
+  CC  ../src/crypto/ms_funcs.c
+  CC  ../src/eap_common/chap.c
+  CC  ../src/eapol_supp/eapol_supp_sm.c
+../src/crypto/tls_openssl.c: In function 'tls_parse_pkcs12':
+../src/crypto/tls_openssl.c:2252:9: error: 'SSL_BUILD_CHAIN_FLAG_CHECK' undeclared (first use in this function)
+../src/crypto/tls_openssl.c:2252:9: note: each undeclared identifier is reported only once for each function it appears in
+../src/crypto/tls_openssl.c:2253:9: error: 'SSL_BUILD_CHAIN_FLAG_IGNORE_ERROR' undeclared (first use in this function)
+make[1]: *** [../src/crypto/tls_openssl.o] Error 1
+make[1]: *** Waiting for unfinished jobs....
+  CC  ../src/eap_peer/eap_tls_common.c
+  CC  ../src/eap_peer/eap.c
+  CC  ../src/crypto/crypto_openssl.c
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.1H8jBcK2tm/wpa_supplicant-2.5/wpa_supplicant'

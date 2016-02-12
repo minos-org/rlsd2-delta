@@ -1,0 +1,13 @@
+libavformat/yop.c: In function 'yop_read_packet':
+libavformat/yop.c:137:9: warning: 'destruct' is deprecated (declared at ./libavcodec/avcodec.h:1444) [-Wdeprecated-declarations]
+AR      libavformat/libavformat.a
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.VqOknxgxEq/MPlayer-1.2/ffmpeg'`
++ '[' 0 -ne 2 ']'
++ cd /var/lib/rlsd2
++ cleanup /var/lib/rlsd2/tmp.VqOknxgxEq
++ echo '> Cleaning up'
+> Cleaning up
++ '[' 0 -eq 0 ']'
++ umount -l /var/lib/rlsd2/tmp.VqOknxgxEq
++ rm -rf /var/lib/rlsd2/tmp.VqOknxgxEq
++ exit 1
