@@ -1,0 +1,106 @@
+recent mutt versions depend in recent automake releases on this case, mutt
+tries to execute automake-1.13 which is not available in Ubuntu precise neither
+in rlsd2 repositories
+
+maybe an integration with static-get + sysroot could fix generally this and
+other similar problems.
+
+checking for sys/param.h... (cached) yes
+checking for feof_unlocked... yes
+checking for fgets_unlocked... yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for setenv... (cached) yes
+checking for setlocale... yes
+checking for stpcpy... yes
+checking for strchr... yes
+checking for strcasecmp... (cached) yes
+checking for strdup... (cached) yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for __argz_count... no
+checking for __argz_stringify... no
+checking for __argz_next... no
+checking for iconv... yes
+checking for iconv declaration...
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking whether NLS is requested... no
+checking for bison... bison
+checking version of bison... 2.5, ok
+checking iconv.h usability... yes
+checking iconv.h presence... yes
+checking for iconv.h... yes
+checking whether iconv.h defines iconv_t... yes
+checking whether this iconv is good enough... yes
+checking whether iconv is non-transcribing... no
+checking for bind_textdomain_codeset... yes
+checking stringprep.h usability... no
+checking stringprep.h presence... no
+checking for stringprep.h... no
+checking idn/stringprep.h usability... no
+checking idn/stringprep.h presence... no
+checking for idn/stringprep.h... no
+checking idna.h usability... no
+checking idna.h presence... no
+checking for idna.h... no
+checking idn/idna.h usability... no
+checking idn/idna.h presence... no
+checking for idn/idna.h... no
+checking for library containing stringprep_check_version... no
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking for iswalnum... yes
+checking for iswalpha... yes
+checking for iswblank... yes
+checking for iswcntrl... yes
+checking for iswdigit... yes
+checking for iswgraph... yes
+checking for iswlower... yes
+checking for iswprint... yes
+checking for iswpunct... yes
+checking for iswspace... yes
+checking for iswupper... yes
+checking for iswxdigit... yes
+checking for towupper... yes
+checking for towlower... yes
+checking for mbstate_t... yes
+checking for wchar_t functions... yes
+checking for nl_langinfo and CODESET... yes
+checking for nl_langinfo and YESEXPR... yes
+checking for ospcat... none
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating contrib/Makefile
+config.status: creating doc/Makefile
+config.status: creating imap/Makefile
+config.status: creating intl/Makefile
+config.status: creating m4/Makefile
+config.status: creating po/Makefile.in
+config.status: creating hcachever.sh
+config.status: creating muttbug.sh
+config.status: creating doc/instdoc.sh
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing default-1 commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
+make[1]: Entering directory `/var/lib/rlsd2/tmp.dJ5G0Mk9kI/mutt-1.5.23'
+ cd . && automake-1.13 --foreign Makefile
+/bin/bash: line 11: automake-1.13: command not found
+make[1]: *** [Makefile.in] Error 127
+make[1]: Leaving directory `/var/lib/rlsd2/tmp.dJ5G0Mk9kI/mutt-1.5.23'
