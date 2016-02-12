@@ -1,0 +1,9 @@
+--- build	2016-02-12 12:44:37.969314469 +0300
++++ build.new	2016-02-12 12:44:33.643258983 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="2.9.4"
+-PKG_SRCS="http://downloads.sourceforge.net/project/fuse/fuse-2.X/$PKG_VER/fuse-$PKG_VER.tar.gz"
++PKG_SRCS="https://github.com/libfuse/libfuse/releases/download/fuse_2_9_4/fuse-$PKG_VER.tar.gz"
+ PKG_DESC="An interface for user-mode file systems"
+ PKG_DEPS="musl"
+ 

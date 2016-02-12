@@ -1,0 +1,11 @@
+--- build	2016-02-12 14:31:23.160450493 +0300
++++ build.new	2016-02-12 14:31:27.217501183 +0300
+@@ -3,7 +3,7 @@
+ PKG_DEPS="musl ncurses"
+ 
+ build() {
+-	$MAKE
++	$MAKE  CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

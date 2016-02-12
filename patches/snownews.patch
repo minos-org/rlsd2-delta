@@ -1,0 +1,11 @@
+--- build	2016-02-12 14:35:47.881759247 +0300
++++ build.new	2016-02-12 14:36:43.776458174 +0300
+@@ -16,7 +16,7 @@
+ 
+ 	EXTRA_CFLAGS="$CFLAGS" \
+ 	EXTRA_LDFLAGS="$LDFLAGS" \
+-	$MAKE
++	$MAKE  CFLAGS="$(pkg-config --cflags ncurses libxml-2.0)"
+ }
+ 
+ package() {

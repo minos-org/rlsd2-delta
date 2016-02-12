@@ -1,0 +1,18 @@
+--- build	2016-02-12 12:14:53.385134198 +0300
++++ build.new	2016-02-12 12:15:04.259276338 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="0.6.1"
+-PKG_SRCS="http://www.gropp.org/bwm-ng/bwm-ng-$PKG_VER.tar.gz"
++PKG_SRCS="http://distfiles.alpinelinux.org/distfiles/bwm-ng-$PKG_VER.tar.gz"
+ PKG_DESC="A network monitor"
+ PKG_DEPS="musl ncurses"
+ 
+@@ -16,7 +16,7 @@
+ 	            --mandir="/man"
+ 	[ 0 -ne $? ] && return 1
+ 
+-	$MAKE
++	$MAKE CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

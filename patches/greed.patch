@@ -1,0 +1,11 @@
+--- build	2016-02-12 13:56:24.235059299 +0300
++++ build.new	2016-02-12 13:56:29.756129001 +0300
+@@ -12,7 +12,7 @@
+ }
+ 
+ build() {
+-	$MAKE
++	$MAKE CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

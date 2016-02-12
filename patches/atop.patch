@@ -1,0 +1,11 @@
+--- build	2016-02-12 11:27:54.603144628 +0300
++++ build.new	2016-02-12 11:28:09.533329562 +0300
+@@ -13,7 +13,7 @@
+ }
+ 
+ build() {
+-	LDFLAGS="$LDFLAGS $LIBS" $MAKE
++	LDFLAGS="$LDFLAGS $LIBS" CFLAGS="$(pkg-config --cflags ncurses)" $MAKE
+ }
+ 
+ package() {

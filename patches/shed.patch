@@ -1,0 +1,16 @@
+--- build	2016-02-12 14:30:04.292465192 +0300
++++ build.new	2016-02-12 14:30:11.807559070 +0300
+@@ -11,11 +11,11 @@
+ }
+ 
+ build() {
+-	./configure --prefix="" \
++	 CPPFLAGS="$(pkg-config --cflags ncurses)" ./configure --prefix="" \
+ 	            --mandir="/man"
+ 	[ 0 -ne $? ] && return 1
+ 
+-	$MAKE
++	$MAKE  CPPFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

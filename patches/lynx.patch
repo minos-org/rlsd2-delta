@@ -1,0 +1,9 @@
+--- build	2016-02-12 14:13:42.191147084 +0300
++++ build.new	2016-02-12 14:13:48.398224908 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="2.8.8"
+-PKG_SRCS="http://lynx.isc.org/lynx$PKG_VER/lynx$PKG_VER.tar.bz2"
++PKG_SRCS="http://invisible-mirror.net/archives/lynx/tarballs/lynx${PKG_VER}rel.2.tar.bz2"
+ PKG_DESC="A web browser"
+ PKG_DEPS="musl zlib ncurses libressl"
+ 

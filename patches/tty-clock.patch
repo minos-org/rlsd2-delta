@@ -1,0 +1,11 @@
+--- build	2016-02-12 14:37:59.154400893 +0300
++++ build.new	2016-02-12 14:38:03.491455140 +0300
+@@ -3,7 +3,7 @@
+ PKG_DEPS="musl ncurses"
+ 
+ build() {
+-	$CC -o tty-clock ttyclock.c $CFLAGS $LDFLAGS -lncurses
++	$CC -o tty-clock ttyclock.c $CFLAGS $(pkg-config --cflags ncurses) $LDFLAGS -lncurses
+ }
+ 
+ package() {

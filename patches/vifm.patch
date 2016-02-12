@@ -1,0 +1,18 @@
+--- build	2016-02-12 14:40:04.446968271 +0300
++++ build.new	2016-02-12 14:40:08.771022371 +0300
+@@ -14,13 +14,13 @@
+ 
+ build() {
+ 	LIBS="-lmagic -lz $LIBS" \
+-	./configure --prefix="" \
++	CFLAGS="$(pkg-config --cflags ncurses)" ./configure --prefix="" \
+ 		    --mandir="/man" \
+ 		    --docdir="/doc/vifm" \
+ 	            --disable-desktop-files
+ 	[ 0 -ne $? ] && return 1
+ 
+-	$MAKE
++	$MAKE CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

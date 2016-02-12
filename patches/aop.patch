@@ -1,0 +1,11 @@
+--- build	2016-02-12 12:12:15.289066133 +0300
++++ build.new	2016-02-12 12:12:25.894204949 +0300
+@@ -13,7 +13,7 @@
+ }
+ 
+ build() {
+-	$CC -o aop aop.c $CFLAGS $LDFLAGS -lncurses $LIBS
++	$CC -o aop aop.c $(pkg-config --cflags --libs ncurses) $CFLAGS $LDFLAGS $LIBS
+ }
+ 
+ package() {

@@ -1,0 +1,9 @@
+--- build	2016-02-12 12:56:20.452312503 +0300
++++ build.new	2016-02-12 12:56:25.881381957 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="1.6.20"
+-PKG_SRCS="ftp://ftp.simplesystems.org/pub/libpng/png/src/libpng16/libpng-$PKG_VER.tar.xz"
++PKG_SRCS="http://ftp.lfs-matrix.net/pub/blfs/conglomeration/libpng/libpng-$PKG_VER.tar.xz"
+ PKG_DESC="A library for handling PNG images"
+ PKG_DEPS="musl"
+ 

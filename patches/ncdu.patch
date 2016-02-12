@@ -1,0 +1,24 @@
+--- build	2016-02-12 14:24:57.611620849 +0300
++++ build.new	2016-02-12 14:25:08.789761176 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="1.11"
+-PKG_SRCS="http://dev.yorhel.nl/download/ncdu-$PKG_VER.tar.gz"
++PKG_SRCS="http://pkgs.fedoraproject.org/repo/pkgs/ncdu/ncdu-1.11.tar.gz/9e44240a5356b029f05f0e70a63c4d12/ncdu-$PKG_VER.tar.gz"
+ PKG_DESC="A disk usage analyzer"
+ PKG_DEPS="musl ncurses"
+ 
+@@ -12,12 +12,12 @@
+ }
+ 
+ build() {
+-	./configure --prefix="" \
++	CFLAGS="$(pkg-config --cflags ncurses)" ./configure --prefix="" \
+ 	            --mandir="/man" \
+ 	            --with-ncurses
+ 	[ 0 -ne $? ] && return 1
+ 
+-	$MAKE
++	$MAKE CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {

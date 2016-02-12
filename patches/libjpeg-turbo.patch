@@ -1,0 +1,10 @@
+--- build	2016-02-12 13:52:12.039872603 +0300
++++ build.new	2016-02-12 13:51:48.595575337 +0300
+@@ -16,6 +16,7 @@
+ 	./configure --prefix="" \
+ 	            --datadir="/" \
+ 	            --mandir="/man" \
++	            --docdir="/doc" \
+ 	            --enable-static \
+ 	            --disable-shared \
+ 	            --without-jpeg7 \

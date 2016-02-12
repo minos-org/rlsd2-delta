@@ -1,0 +1,9 @@
+--- build	2016-02-12 14:02:44.790864130 +0300
++++ build.new	2016-02-12 14:02:53.740977141 +0300
+@@ -1,5 +1,5 @@
+ PKG_VER="0.8.17"
+-PKG_SRCS="http://www.irssi.org/files/irssi-$PKG_VER.tar.bz2"
++PKG_SRCS="http://pkgs.fedoraproject.org/repo/pkgs/irssi/irssi-0.8.17.tar.bz2/ecf64be47978d89a742b435a81cb47db/irssi-$PKG_VER.tar.bz2"
+ PKG_DESC="An IRC client"
+ PKG_DEPS="musl ncurses libressl glib"
+ 

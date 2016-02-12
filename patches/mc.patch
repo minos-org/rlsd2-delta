@@ -1,0 +1,11 @@
+--- build	2016-02-12 14:16:15.925074867 +0300
++++ build.new	2016-02-12 14:16:20.409131103 +0300
+@@ -21,7 +21,7 @@
+ 	            --without-internal-edit
+ 	[ 0 -ne $? ] && return 1
+ 
+-	$MAKE
++	$MAKE CFLAGS="$(pkg-config --cflags ncurses)"
+ }
+ 
+ package() {
