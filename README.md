@@ -11,3 +11,9 @@ Changes:
         - per package targets
     - other files
         - use tar.gz as the default compress format
+
+- broken/
+    - broken recipes, every directory includes a log file with current error details
+
+- patches/
+    - \*.patch: patches required to build rlsd2 packages in a minos environment
