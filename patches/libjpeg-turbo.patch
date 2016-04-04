@@ -1,10 +1,31 @@
---- build	2016-02-12 13:52:12.039872603 +0300
-+++ build.new	2016-02-12 13:51:48.595575337 +0300
-@@ -16,6 +16,7 @@
- 	./configure --prefix="" \
+--- ../../upstream-rlsd2/rules/libjpeg-turbo/docdir.patch	2015-07-02 11:11:32.723233205 +0300
++++ ../../upstream-rlsd2/rules/libjpeg-turbo/docdir.patch.new	2016-04-04 07:57:47.136617388 +0300
+@@ -1,12 +1,11 @@
+-diff -rup libjpeg-turbo-1.4.1-orig/Makefile.in libjpeg-turbo-1.4.1/Makefile.in
+---- libjpeg-turbo-1.4.1-orig/Makefile.in	2015-06-09 20:59:22.221803249 +0300
+-+++ libjpeg-turbo-1.4.1/Makefile.in	2015-06-09 21:02:58.450875410 +0300
+-@@ -414,7 +414,7 @@ build_cpu = @build_cpu@
+- build_os = @build_os@
+- build_vendor = @build_vendor@
++--- libjpeg-turbo-1.4.2-orig/Makefile.in    2016-02-12 10:02:24.150954768 +0000
+++++ libjpeg-turbo-1.4.2/Makefile.in 2016-02-12 10:02:45.951231910 +0000
++@@ -569,7 +569,7 @@ build_vendor = @build_vendor@
++ builddir = @builddir@
+  datadir = @datadir@
++ datarootdir = @datarootdir@
+ -docdir = @docdir@
+ +docdir = @docdir@/@PACKAGE@
++ dvidir = @dvidir@
+  exec_prefix = @exec_prefix@
+  host = @host@
+- host_alias = @host_alias@
+--- upstream-rlsd2/rules/libjpeg-turbo/build	2015-09-27 01:00:04.679845665 +0300
++++ upstream-rlsd2/rules/libjpeg-turbo/build.new	2016-04-04 08:00:45.830979034 +0300
+@@ -17,6 +17,7 @@
  	            --datadir="/" \
  	            --mandir="/man" \
-+	            --docdir="/doc" \
  	            --enable-static \
++	            --docdir="/doc" \
  	            --disable-shared \
  	            --without-jpeg7 \
+ 	            --without-jpeg8 \
